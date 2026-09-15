@@ -291,6 +291,7 @@ p {
 
 
 /* ================= PERBAIKAN KHUSUS LAYAR HP ================= */
+/* ================= PERBAIKAN KHUSUS LAYAR HP ================= */
 @media (max-width: 768px) {
   /* Merapikan Navbar di HP agar muat */
   .nb { gap: 10px; padding: 0 10px; }
@@ -302,9 +303,16 @@ p {
   h2, .hero-title h2, .story-text h3 { font-size: 2rem !important; margin-bottom: 10px; }
   p, .hero-title p, .story-text p { font-size: 0.85rem !important; letter-spacing: 1px; line-height: 1.6; }
   
-  /* Mengubah layout Kiri-Kanan menjadi Atas-Bawah (Stacking) */
-  .c2, .c3, .story-content { 
+  /* Mengubah layout menjadi Atas-Bawah (Foto otomatis di atas jika urutan HTML-nya foto duluan) */
+  .c2, .story-content { 
     flex-direction: column !important; 
+    gap: 30px !important; 
+    align-items: center; 
+  }
+
+  /* KHUSUS C3: Membalik tumpukan agar Foto dipaksa naik ke atas dan Teks turun ke bawah */
+  .c3 {
+    flex-direction: column-reverse !important;
     gap: 30px !important; 
     align-items: center; 
   }
@@ -335,5 +343,4 @@ p {
     font-size: 30vw; 
     top: -12vw; 
   }
-
-} 
+}
