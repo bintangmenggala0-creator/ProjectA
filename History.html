@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History - Bespoke Scrollytelling</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="image" href="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508850/copy_of_mohammad-javad-asgharikolahi-uwkvdn4fphq-unsplash_ijcyhl.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header Overlay -->
+  <header class="header">
+    <nav class="nb">
+      <a href="index.html" class="nt">Halaman Utama</a>
+      <a href="History.html" class="nt" style="color: var(--accent);">History</a>
+      <a href="news.html" class="nt">Latest News</a>
+      
+      <!-- Search Box Interaktif -->
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke-width="1.5"></circle>
+          <line x1="16" y1="16" x2="22" y2="22" stroke-width="1.5"></line>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div class="ns"></div>
+  </header>
+  
+  <main>
+    <!-- Hero History (Tengah & Full Screen) -->
+    <section class="cd history-hero">
+      <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508850/copy_of_mohammad-javad-asgharikolahi-uwkvdn4fphq-unsplash_ijcyhl.jpg" alt="History Hero" class="hero-img" fetchpriority="high">
+      <div class="hero-title">
+        <h2>OUR LEGACY</h2>
+        <p>A CENTURY OF A GLOBAL ICON</p>
+      </div>
+    </section>
+
+    <!-- Timeline Storytelling Section -->
+    <section class="timeline-section">
+      <div class="timeline-line"></div>
+
+      <!-- Story 1 (1999 - Gambar Kiri, Teks Kanan) -->
+      <div class="story-row cd">
+        <div class="story-year">1999</div>
+        <div class="story-content">
+          <!-- Foto diletakkan lebih dulu agar berada di kiri -->
+          <div class="story-img-wrapper">
+            <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508912/copy_of_thom-milkovic-c9rjznytisi-unsplash_bbvh48.jpg" alt="Era 1999" loading="lazy">
+          </div>
+          <!-- Teks di bawahnya akan otomatis mengisi ruang di kanan -->
+          <div class="story-text right-align">
+            <h3>THE BEGINNING</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story 2 (2011 - Gambar Kiri, Teks Kanan) -->
+      <div class="story-row cd">
+        <div class="story-year">2011</div>
+        <div class="story-content">
+          <!-- Foto diletakkan lebih dulu agar berada di kiri -->
+          <div class="story-img-wrapper">
+            <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789509041/copy_of_anh-tuan-to-d5teayph5oi-unsplash_exufs7.jpg" alt="Era 2011" loading="lazy">
+          </div>
+          <!-- Teks di bawahnya akan otomatis mengisi ruang di kanan -->
+          <div class="story-text right-align">
+            <h3>THE EVOLUTION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

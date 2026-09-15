@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bespoke Scrollytelling</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Plus+Jakarta+Sans:wght@300;400&display=swap" rel="stylesheet">
+  
+  <link rel="preload" as="image" href="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508850/copy_of_mohammad-javad-asgharikolahi-uwkvdn4fphq-unsplash_ijcyhl.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header Overlay -->
+  <header class="header">
+    <nav class="nb">
+      <!-- Tautan diperbarui dengan nama file yang sesuai -->
+      <a href="index.html" class="nt" style="color: var(--accent);">Halaman Utama</a>
+      <a href="History.html" class="nt">History</a>
+      <a href="news.html" class="nt">Latest News</a>
+      
+      <!-- Search Box Interaktif -->
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke-width="1.5"></circle>
+          <line x1="16" y1="16" x2="22" y2="22" stroke-width="1.5"></line>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div class="ns"></div>
+  </header>
+  <main>
+    <!-- Momen 1 (Full Screen - 16:9) -->
+    <section class="cd c1">
+      <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508850/copy_of_mohammad-javad-asgharikolahi-uwkvdn4fphq-unsplash_ijcyhl.jpg" alt="Moment 1" class="i1" fetchpriority="high">
+      <div class="t1">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </section>
+
+    <!-- Momen 2 (Kiri Gambar, Kanan Teks - 3:4) -->
+    <section class="cd c2">
+      <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789508912/copy_of_thom-milkovic-c9rjznytisi-unsplash_bbvh48.jpg" alt="Moment 2" class="i2" loading="lazy">
+      <div class="t2">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </section>
+
+    <!-- Momen 3 (Kiri Teks, Kanan Gambar - 3:4) -->
+    <section class="cd c3">
+      <div class="t3">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <img src="https://res.cloudinary.com/buklippb/image/upload/f_auto,q_auto/v1789509041/copy_of_anh-tuan-to-d5teayph5oi-unsplash_exufs7.jpg" alt="Moment 3" class="i3" loading="lazy">
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
