@@ -291,40 +291,34 @@ p {
 
 
 /* ================= PERBAIKAN KHUSUS LAYAR HP ================= */
-/* ================= PERBAIKAN KHUSUS LAYAR HP ================= */
 @media (max-width: 768px) {
-  /* Merapikan Navbar di HP agar muat */
+  /* Merapikan Navbar di HP */
   .nb { gap: 10px; padding: 0 10px; }
   .nt { font-size: 9px; letter-spacing: 1px; }
   
   .t1 { max-width: 90vw; }
   
-  /* Penyesuaian ukuran font agar proporsional di HP */
+  /* Penyesuaian ukuran font di HP */
   h2, .hero-title h2, .story-text h3 { font-size: 2rem !important; margin-bottom: 10px; }
   p, .hero-title p, .story-text p { font-size: 0.85rem !important; letter-spacing: 1px; line-height: 1.6; }
   
-  /* Mengubah layout menjadi Atas-Bawah (Foto otomatis di atas jika urutan HTML-nya foto duluan) */
-  .c2, .story-content { 
+  /* Mengubah semua container menjadi kolom standar (atas-bawah) */
+  .c2, .c3, .story-content { 
     flex-direction: column !important; 
     gap: 30px !important; 
-    align-items: center; 
-  }
-
-  /* KHUSUS C3: Membalik tumpukan agar Foto dipaksa naik ke atas dan Teks turun ke bawah */
-  .c3 {
-    flex-direction: column-reverse !important;
-    gap: 30px !important; 
-    align-items: center; 
+    align-items: center !important; 
   }
   
-  /* Memperbesar gambar di HP (rasio statis 3:4 tetap terjaga) */
+  /* MEMAKSA FOTO SELALU DI ATAS (Urutan 1) */
   .i2, .i3, .story-img-wrapper { 
+    order: 1 !important; 
     width: 85vw !important; 
     margin: 0 auto;
   }
   
-  /* Memberikan ruang penuh untuk teks di HP */
+  /* MEMAKSA TEKS SELALU DI BAWAH FOTO (Urutan 2) */
   .t2, .t3, .story-text { 
+    order: 2 !important; 
     width: 90vw !important; 
   }
   
@@ -333,7 +327,7 @@ p {
     text-align: center !important; 
   }
   
-  /* Menyembunyikan garis tengah timeline di HP agar tidak menabrak gambar */
+  /* Menyembunyikan garis tengah timeline di HP */
   .timeline-line { 
     display: none; 
   }
