@@ -298,3 +298,46 @@ p {
 .right-align { text-align: left; }
 .left-align { text-align: right; }
 .left-align h3, .left-align p { text-align: right; }
+
+/* =========================================
+   MOBILE RESPONSIVE FIXES
+   ========================================= */
+@media (max-width: 768px) {
+  /* 1. Perbaikan Navbar agar tidak bertumpuk */
+  .nb {
+    gap: 12px; /* Mengurangi jarak antar menu */
+    padding: 0 10px;
+  }
+  .nt {
+    font-size: 9px; /* Mengecilkan teks menu */
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  .search-wrapper.active .search-input {
+    width: 100px; /* Search box lebih pendek di HP */
+  }
+
+  /* 2. Perbaikan Teks Hero (Halaman Utama) agar melebar */
+  .t1 {
+    max-width: 85vw; /* Memberi ruang teks hingga 85% layar HP */
+  }
+
+  /* 3. Penyesuaian Ukuran Font Global untuk HP */
+  h2, .hero-title h2, .hc-heading, .story-text h3 {
+    font-size: 2.2rem !important; /* Mengecilkan judul utama */
+    margin-bottom: 8px;
+  }
+  p, .hero-title p, .story-text p {
+    font-size: 0.85rem !important; /* Mengecilkan teks deskripsi */
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+
+  /* 4. Perbaikan Layout Card/Timeline agar tidak berdesakan */
+  .c2, .c3, .story-content {
+    gap: 4vw; /* Mengurangi jarak antara foto dan teks */
+  }
+  .i2, .i3, .story-img-wrapper {
+    width: 45vw; /* Sedikit memperbesar proporsi gambar di HP */
+  }
+}
