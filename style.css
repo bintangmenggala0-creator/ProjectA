@@ -292,17 +292,48 @@ p {
 
 /* ================= PERBAIKAN KHUSUS LAYAR HP ================= */
 @media (max-width: 768px) {
-  /* Merapikan Navbar di HP agar tidak turun jadi 2 baris */
-  .nb { gap: 15px; padding: 0 10px; }
-  .nt { font-size: 10px; letter-spacing: 1px; }
+  /* Merapikan Navbar di HP agar muat */
+  .nb { gap: 10px; padding: 0 10px; }
+  .nt { font-size: 9px; letter-spacing: 1px; }
   
-  /* Melebarkan area teks Halaman Utama agar tidak tergencet/vertikal */
   .t1 { max-width: 90vw; }
   
-  /* Mengecilkan font besar agar proporsional di HP */
-  h2, .hero-title h2, .story-text h3 { font-size: 2.2rem; }
-  p, .hero-title p, .story-text p { font-size: 0.85rem; letter-spacing: 1px; line-height: 1.6; }
+  /* Penyesuaian ukuran font agar proporsional di HP */
+  h2, .hero-title h2, .story-text h3 { font-size: 2rem !important; margin-bottom: 10px; }
+  p, .hero-title p, .story-text p { font-size: 0.85rem !important; letter-spacing: 1px; line-height: 1.6; }
   
-  /* Mengurangi jarak gap yang terlalu besar di HP */
-  .c2, .c3, .story-content { gap: 5vw; }
-}
+  /* Mengubah layout Kiri-Kanan menjadi Atas-Bawah (Stacking) */
+  .c2, .c3, .story-content { 
+    flex-direction: column !important; 
+    gap: 30px !important; 
+    align-items: center; 
+  }
+  
+  /* Memperbesar gambar di HP (rasio statis 3:4 tetap terjaga) */
+  .i2, .i3, .story-img-wrapper { 
+    width: 85vw !important; 
+    margin: 0 auto;
+  }
+  
+  /* Memberikan ruang penuh untuk teks di HP */
+  .t2, .t3, .story-text { 
+    width: 90vw !important; 
+  }
+  
+  /* Memaksa semua teks rata tengah di HP agar elegan & rapi */
+  .t2 h2, .t3 h2, .story-text h3, .t2 p, .t3 p, .story-text p, .right-align, .left-align { 
+    text-align: center !important; 
+  }
+  
+  /* Menyembunyikan garis tengah timeline di HP agar tidak menabrak gambar */
+  .timeline-line { 
+    display: none; 
+  }
+  
+  /* Menyesuaikan ukuran angka tahun raksasa */
+  .story-year { 
+    font-size: 30vw; 
+    top: -12vw; 
+  }
+
+} 
